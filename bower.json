@@ -1,0 +1,24 @@
+{
+  "name": "wordify",
+  "version": "1.0.0",
+  "homepage": "https://github.com/mynamesleon/wordify",
+  "authors": [
+    "Leon Slater <contact@mynamesleon.com>"
+  ],
+  "description": "Unjumble letters into words",
+  "moduleType": [
+    "globals"
+  ],
+  "main": [
+    "scripts/image-fit.min.js",
+    "styles/style.css"
+  ],
+  "license": "GPL-3.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
