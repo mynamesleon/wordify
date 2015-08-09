@@ -6,6 +6,9 @@ Just grab the zip from the [releases](https://www.github.com/mynamesleon/wordify
 
 Or install via bower `bower install wordify`
 
+## Demo
+[Wordify demo page](http://wordify.mynamesleon.com)
+
 ## Usage
 Wordify creates a global namespace, which needs to contain a dictionary - an array of words - to cycle through when checking the string. This needs to be stored at `wordify.dictionary`. The main wordify file does not contain a word dictionary in order to reduce size - I have included one in the repository though sampled from the [English Open Word List for reference](http://dreamsteep.com/projects/the-english-open-word-list.html).
 
@@ -23,7 +26,7 @@ or
 
 This will return the first matching word from the dictionary of the greatest length, or if no word is found, an empty string.
 
-The function accepts a second optional boolean parameter, indicating if you want an array of all matching words returned. For example, for `wordify('enot', true);`, an example returned array might be:
+The function accepts a second optional boolean parameter, indicating if you want an array of all matching words returned. For example, for `wordify('enot', true)`, an example returned array might be:
 
 ```js
 [
