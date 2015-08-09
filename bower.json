@@ -10,7 +10,7 @@
     "globals"
   ],
   "main": [
-    "scripts/image-fit.min.js",
+    "scripts/wordify.min.js",
     "styles/style.css"
   ],
   "license": "GPL-3.0",
