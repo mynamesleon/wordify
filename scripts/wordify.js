@@ -145,7 +145,7 @@
         if (all) {
             return ordered;
         } else {
-            return ordered[results.length - 1][0];
+            return ordered[ordered.length - 1][0];
         }
     };
 
