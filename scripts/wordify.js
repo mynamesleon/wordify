@@ -157,6 +157,7 @@
     /*
      * store wordify on the string prototype
      * @param all {boolean} optional: return all found words if true
+     * @return {string|array}: see details on main wordify function above
      */
     String.prototype.wordify = function (all) {
         return window.wordify(this, all);
