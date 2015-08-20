@@ -10,7 +10,7 @@ Or install via bower `bower install wordify`
 [Wordify demo page](http://wordify.mynamesleon.com)
 
 ## Usage
-Wordify creates a global namespace, which needs to contain a dictionary - an array of words - to cycle through when checking the string. This needs to be stored at `wordify.dictionary`. The main wordify file does not contain a word dictionary in order to reduce size - I have included one in the repository though sampled from the [English Open Word List for reference](http://dreamsteep.com/projects/the-english-open-word-list.html).
+Wordify creates a `wordify` object in the global namespace, which needs to contain a dictionary - an array of words - to cycle through when checking the string, which can be accessed (and set) via `wordify.dictionary`. The main wordify file does not contain a word dictionary in order to reduce size - I have included one in the repository sampled from the [English Open Word List for reference](http://dreamsteep.com/projects/the-english-open-word-list.html).
 
 Once you have a dictionary added, wordify can be called from the global function, or the string prototype:
 
