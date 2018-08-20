@@ -39,8 +39,8 @@ body { margin: 0; padding: 0; padding: 0; font-family: 'Noto Sans', 'Helvetica N
 /* typography */
 a,
 a:hover,
-a:visited { color: #ff4e88; text-decoration: none; -webkit-transition: background 0.3s, color 0.3s; -moz-transition: background 0.3s, color 0.3s; -o-transition: background 0.3s, color 0.3s; transition: background 0.3s, color 0.3s; }
-a:hover { color: #ff6b9b; }
+a:visited { color: #E6004D; text-decoration: none; -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
+a:hover { color: #FF387A; }
 
 p,
 ul,
@@ -55,15 +55,17 @@ h3 { font-size: 3.4rem; line-height: 3.6rem; font-weight: normal; margin: 0; pad
 h2 { font-size: 2.4rem; line-height: 3.2rem; border-bottom: 1px solid #ccc; padding: 1rem 2rem; margin-bottom: 2rem; }
 h3 { font-size: 2rem; line-height: 2.6rem; }
 
-input:focus { outline: 0.1rem solid rgba(255, 107, 155, 0.5); }
-
 .wrapper { max-width: 120rem; margin: auto; }
 
 #site-header { padding: 5rem 0; text-align: center; }
-input[type="text"] { border: 1px solid #dadada; background: transparent; padding: 1rem; font-size: 1.6rem; width: 25rem; color: #808080; font-family: 'Noto Sans'; }
+input[type="text"] { border: 1px solid #dadada; background: transparent; padding: 1rem; font-size: 1.6rem; width: 25rem; color: #808080; font-family: 'Noto Sans'; box-shadow: 0 0 3px rgba(0,0,0,0.25); -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; }
+input[type="text"]:focus { color: #E6004D; -webkit-box-shadow: 0 0 3px #E6004D; -moz-box-shadow: 0 0 3px #E6004D; box-shadow: 0 0 3px #E6004D; }
 
 #holder > div { padding: 2rem 0; overflow: hidden; }
-#holder > div > div { width: 18%; float: left; padding: 0 1%; }
+#holder > div > div { width: 18%; float: left; padding: 5px 1%; }
+#holder > div > div a { color: #707070; text-decoration: none; border-bottom: 1px solid transparent; }
+#holder > div > div a:hover,
+#holder > div > div a:focus { color: #E6004D; border-color: #E6004D; }
 
 .centre { text-align: center; }
 
@@ -71,14 +73,14 @@ input[type="text"] { border: 1px solid #dadada; background: transparent; padding
     .wrapper { max-width: none; padding: 0 1rem; }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
     #holder > div > div { width: 23%; }
 }
 
-@media screen and (max-width: 600px) {
-    #holder > div > div { width: 29.33%; padding: 0 2%; }
+@media screen and (max-width: 700px) {
+    #holder > div > div { width: 29.33%; padding: 5px 2%; }
 }
 
-@media screen and (max-width: 480px) {
-    #holder > div > div { width: 40%; padding: 0 5%; }
+@media screen and (max-width: 540px) {
+    #holder > div > div { width: 40%; padding: 5px 5%; }
 }
