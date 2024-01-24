@@ -32,7 +32,7 @@
 
     // get the dictionary array
     $.ajax({
-        url: '/dictionary/infochimps.json',
+        url: 'dictionary/infochimps.json',
         type: 'GET',
         dataType: 'json',
         success: function (res) {
